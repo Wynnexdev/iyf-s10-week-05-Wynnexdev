@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>DOM Practice</title>
+    <title>Event Handling Exercises</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header id="main-header">
-        <h1>DOM Practice</h1>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="container">
-        <article>
-            <h2 class="title">Article Title</h2>
-            <p class="content">This is the first paragraph.</p>
-            <p class="content">This is the second paragraph.</p>
-        </article>
-        
-        <section>
-            <h2>Form Section</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Name">
-                <input type="email" id="email" name="email" placeholder="Email">
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2026</p>
-    </footer>
-    
-    <script src="dom.js"></script>
+
+    <!-- Task 10.1: Click Counter -->
+    <section id="counter-section">
+        <h2>Task 10.1: Click Counter</h2>
+        <div class="counter-display">
+            Count: <span id="count">0</span>
+        </div>
+        <div class="counter-controls">
+            <button id="btn-decrease">-</button>
+            <button id="btn-increase">+</button>
+            <button id="btn-reset">Reset</button>
+        </div>
+    </section>
+
+    <!-- Task 10.3: Delegated Task List -->
+    <section id="task-list-section">
+        <h2>Task 10.3: Delegated Task List</h2>
+        <div class="task-input">
+            <input type="text" id="new-task-input" placeholder="Enter new task...">
+            <button id="btn-add-task">Add Task</button>
+        </div>
+        <ul id="task-list">
+            <li><span>Buy Groceries</span><button class="delete-btn">Delete</button></li>
+        </ul>
+    </section>
+
+    <!-- Task 10.4: Form Handling (and 10.2 Shortcuts) -->
+    <section id="form-section">
+        <h2>Task 10.4: Form Validation (and 10.2 Shortcuts)</h2>
+        <p class="shortcuts-legend">Shortcuts: <strong>Ctrl+S</strong> (Save), <strong>Esc</strong> (Clear),
+            <strong>Ctrl+Enter</strong> (Submit)</p>
+        <form id="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Name (min 2 chars)">
+                <span class="error-msg" id="name-error"></span>
+            </div>
+            <div class="input-group">
+                <input type="text" id="email" name="email" placeholder="Email">
+                <span class="error-msg" id="email-error"></span>
+            </div>
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
