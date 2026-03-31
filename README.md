@@ -1,8 +1,8 @@
 # Week 5: DOM Manipulation & Event Handling
 
 ## Author
-- **Name:** Your Full Name
-- **GitHub:** [@MaisoriKitayama](https://github.com/MaisoriKitayama)
+- **Name:** Winnie Mwangi
+- **GitHub:** [@Wynnexdev](https://github.com/Wynnexdev)
 - **Date:** March 29, 2026
 
 ## Project Description
